@@ -13,6 +13,15 @@ python run_ladder.py          # all seven rungs
 python run_ladder.py r5 r7    # just the calibration and consistency rungs
 ```
 
+On a fresh Colab GPU runtime:
+
+```python
+!git clone -q https://github.com/Maverick-Ansh/jev-from-scratch && cd jev-from-scratch && python run_ladder.py
+```
+
+Only `torch` and `numpy` are needed — both are preinstalled on Colab. Checkpoints land in `ckpt/`,
+so a second run skips training and just re-measures.
+
 ---
 
 ## What Jev actually is
