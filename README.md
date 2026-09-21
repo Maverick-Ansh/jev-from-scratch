@@ -6,7 +6,8 @@ Every module is written out — attention is `softmax(QK'/√d)V`, there is no `
 and no `AutoModelForAnything` — and every architectural claim is turned into a measurement that was
 allowed to come out against the reconstruction. Three of the seven did.
 
-Trains end to end on a free Colab T4 in about seven minutes.
+Trains end to end on a free Colab T4 in under ten minutes. Verified from a clean clone: every
+number below reproduces to four decimals, wall-clock aside.
 
 ```
 python run_ladder.py          # all seven rungs
